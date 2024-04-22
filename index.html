@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookShelf Apps</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- bagian navbar -->
+      BOOKShelf
+    </nav>
+  </header>
+  
+<!-- main section -->
+
+  <main>
+
+    <!-- section for input newBook -->
+
+    <section class="input_section">
+      <h2>Input a NewBook for read </h2>
+      <!-- form section -->
+        <!-- more element for form -->
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" required>
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" required>
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" required>
+          </div>
+          <div class="input">
+            <label for="inputBookImage">Book Image</label>
+            <input id="inputBookImage" type="text" required>
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox">
+          </div>
+          <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+        </form>
+      </form>
+    </section>
+
+    <!-- Search section -->
+    <section class="search_section">
+      <h2>Cari Buku (Opsional)</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Judul</label>
+        <input id="searchBookTitle" type="text">
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </section>
+
+    <!-- place for put MoreBook (Belum Dibaca) -->
+    <section>
+      <h2>Belum Dibaca</h2>
+      <div id="incompleteBookshelfList" class="book_list">
+        <!-- bagian untuk buku yang belum dibaca -->
+        <article class="book-item">
+          <img src="https://i.pinimg.com/236x/07/79/66/077966d00e45d3b811abd68057364077.jpg" alt="" class="Image">
+          <h3>Jhon Wick</h3>
+          <p>reihan</p>
+          <p>2023</p>
+        
+          <div class="action">
+            <button class="green">selesai baca</button>
+            <button class="red">hapus baca</button>
+          </div>
+        </article>
+        
+
+      </div>
+    </section>
+
+    <!-- place for put MoreBook (sudahDibaca) -->
+    <section>
+      <h2>Sudah Dibaca</h2>
+      <div id="completeBookshelfList" class="book_list">
+        <!-- bagian untuk buku yang sudah dibaca -->
+      </div>
+    </section>
+    
+    <!-- end section -->
+
+  </main>
+</body>
+
+<script src="js/main.js"></script>
+</html>

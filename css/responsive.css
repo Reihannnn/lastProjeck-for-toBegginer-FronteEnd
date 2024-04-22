@@ -1,0 +1,44 @@
+@media screen and (max-width: 800px) {
+  
+  h3{
+    font-size: 1.4rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+  main{
+ 
+    max-width:75%;
+    opacity: 0.8; 
+    margin: 0 auto;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--font-white);
+    border-radius: 0 0 15px 15px;
+  }
+
+  .book-item{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  } 
+
+  .input_section > form > .input > input {
+    display: block;
+    width: 93%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .book-item{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+  } 
+
+}
